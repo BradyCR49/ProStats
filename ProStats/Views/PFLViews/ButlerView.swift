@@ -7,17 +7,23 @@
 
 import SwiftUI
 import Firebase
+import SwiftUICharts
 
 struct ButlerView: View {
     @ObservedObject var model = ViewModel(collection: "ButlerData")
     
     var body: some View {
         NavigationView {
+            VStack{
             List(model.teamDataList) { item in
                 Text(item.Team)
                     .navigationTitle(item.Team)
                 Text(item.Record)
+                
             }
+                PieChartView(data: [8,23,54,32], title: "Title", legend: "Legendary")
+        }
+            
         }
     }
     
