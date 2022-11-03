@@ -20,28 +20,27 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            LazyVGrid(columns: columns, alignment: .leading, spacing: 25){
-                ForEach(Array(zip(pflTeams, teamViews)), id: \.0) { team in
-                    NavigationLink(destination: AnyView(team.1), label: {Text("\(team.0)")
-                            .bold()
-                            .frame(width: 120, height: 60)
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                            .buttonStyle(PlainButtonStyle())
-                    })
+            LazyVGrid(columns: columns, alignment: .leading,spacing: 25){
+                    ForEach(Array(zip(pflTeams, teamViews)), id: \.0) { team in
+                        NavigationLink(destination: AnyView(team.1), label: {Text("\(team.0)")
+                                .bold()
+                                .frame(width: 115, height: 60)
+                                .foregroundColor(.accentColor)
+                                .background(.gray)
+                                .cornerRadius(10)
+                        })
+                    }
+                    .navigationTitle("Pioneer League")
                 }
-                .navigationTitle("Pioneer League")
+                
+                .offset(x: 10, y: -50)
             }
-            .offset(x: 10, y: -50)
+            .accentColor(Color(.label))
         }
-        .accentColor(Color(.label))
     }
-}
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .previewInterfaceOrientation(.portrait)
         
     }
 }

@@ -26,8 +26,7 @@
 		2303813128DCBB5800189405 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2303813028DCBB5800189405 /* FirebaseRemoteConfigSwift */; };
 		2303813328DCBB5800189405 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2303813228DCBB5800189405 /* FirebaseStorage */; };
 		2303813528DCBB5800189405 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2303813428DCBB5800189405 /* FirebaseStorageCombine-Community */; };
-		2345B90828F35310004B0281 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 2345B90728F35310004B0281 /* SwiftUICharts */; };
-		2345B90B28F4D48C004B0281 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 2345B90A28F4D48C004B0281 /* Charts */; };
+		2314124528F85EF70036D0F7 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 2314124428F85EF70036D0F7 /* SwiftUICharts */; };
 		236F108B28DC10C8002EA8F4 /* PFLData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236F108A28DC10C8002EA8F4 /* PFLData.swift */; };
 		236F108F28DC1117002EA8F4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236F108E28DC1117002EA8F4 /* ViewModel.swift */; };
 		236F109128DC113D002EA8F4 /* ButlerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236F109028DC113D002EA8F4 /* ButlerView.swift */; };
@@ -184,7 +183,6 @@
 				23EA212728BEE16400CD7D6C /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
 				2303811528DCBB5800189405 /* FirebaseAnalyticsSwift in Frameworks */,
 				2303811B28DCBB5800189405 /* FirebaseCrashlytics in Frameworks */,
-				2345B90B28F4D48C004B0281 /* Charts in Frameworks */,
 				23EA213528BEE16400CD7D6C /* FirebaseStorage in Frameworks */,
 				2303812F28DCBB5800189405 /* FirebaseRemoteConfig in Frameworks */,
 				23B1463F28E2196D00EC4274 /* FirebaseMLModelDownloader in Frameworks */,
@@ -197,7 +195,7 @@
 				23B1464128E2196D00EC4274 /* FirebaseMessaging in Frameworks */,
 				23B1464B28E2196D00EC4274 /* FirebaseStorageCombine-Community in Frameworks */,
 				23B1463728E2196D00EC4274 /* FirebaseFunctionsCombine-Community in Frameworks */,
-				2345B90828F35310004B0281 /* SwiftUICharts in Frameworks */,
+				2314124528F85EF70036D0F7 /* SwiftUICharts in Frameworks */,
 				23B1462B28E2196D00EC4274 /* FirebaseDatabaseSwift in Frameworks */,
 				23EA212D28BEE16400CD7D6C /* FirebaseMessaging in Frameworks */,
 				23B1461B28E2196D00EC4274 /* FirebaseAnalyticsSwift in Frameworks */,
@@ -222,11 +220,11 @@
 			isa = PBXGroup;
 			children = (
 				236F109028DC113D002EA8F4 /* ButlerView.swift */,
-				23B1460328E1322E00EC4274 /* DrakeView.swift */,
-				23B1460128E1315900EC4274 /* DaytonView.swift */,
 				23B145FF28E1309200EC4274 /* DavidsonView.swift */,
-				23B1460728E1333600EC4274 /* MoreheadStateView.swift */,
+				23B1460128E1315900EC4274 /* DaytonView.swift */,
+				23B1460328E1322E00EC4274 /* DrakeView.swift */,
 				23B1461328E1361A00EC4274 /* MaristView.swift */,
+				23B1460728E1333600EC4274 /* MoreheadStateView.swift */,
 				23B1460928E133DE00EC4274 /* PresbyterianView.swift */,
 				23B1460B28E1348300EC4274 /* SanDiegoView.swift */,
 				23B1460D28E1353200EC4274 /* StThomasView.swift */,
@@ -373,8 +371,7 @@
 				23B1464628E2196D00EC4274 /* FirebaseRemoteConfigSwift */,
 				23B1464828E2196D00EC4274 /* FirebaseStorage */,
 				23B1464A28E2196D00EC4274 /* FirebaseStorageCombine-Community */,
-				2345B90728F35310004B0281 /* SwiftUICharts */,
-				2345B90A28F4D48C004B0281 /* Charts */,
+				2314124428F85EF70036D0F7 /* SwiftUICharts */,
 			);
 			productName = ProStats;
 			productReference = 23EA20CE28BC445200CD7D6C /* ProStats.app */;
@@ -408,8 +405,7 @@
 				23EA210128BEE16300CD7D6C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				2303810F28DCBB5800189405 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				23B1461528E2196D00EC4274 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				2345B90628F35310004B0281 /* XCRemoteSwiftPackageReference "ChartView" */,
-				2345B90928F4D48C004B0281 /* XCRemoteSwiftPackageReference "Charts" */,
+				2314124328F85EF70036D0F7 /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 23EA20CF28BC445200CD7D6C /* Products */;
 			projectDirPath = "";
@@ -663,20 +659,12 @@
 				minimumVersion = 9.0.0;
 			};
 		};
-		2345B90628F35310004B0281 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+		2314124328F85EF70036D0F7 /* XCRemoteSwiftPackageReference "ChartView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AppPear/ChartView";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
-			};
-		};
-		2345B90928F4D48C004B0281 /* XCRemoteSwiftPackageReference "Charts" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/danielgindi/Charts";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
 			};
 		};
 		23B1461528E2196D00EC4274 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
@@ -793,15 +781,10 @@
 			package = 23EA210128BEE16300CD7D6C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
 		};
-		2345B90728F35310004B0281 /* SwiftUICharts */ = {
+		2314124428F85EF70036D0F7 /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2345B90628F35310004B0281 /* XCRemoteSwiftPackageReference "ChartView" */;
+			package = 2314124328F85EF70036D0F7 /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
-		};
-		2345B90A28F4D48C004B0281 /* Charts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2345B90928F4D48C004B0281 /* XCRemoteSwiftPackageReference "Charts" */;
-			productName = Charts;
 		};
 		23B1461628E2196D00EC4274 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
