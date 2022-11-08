@@ -14,36 +14,31 @@ struct DavidsonView: View {
     var body: some View {
         NavigationView {
             VStack {
-                List(model.teamDataList) { item in
-                    Text(item.Team)
-                        .navigationTitle(item.Team)
-                    Text("Record: \(item.Record)")
-                    Text("Total Yards: \(item.TotYards)")
-                }
-                List(model.teamDataList) { item in
-                    let keys = item.gOnetot.map{$0.key}
-                    let values = item.gOnetot.map{$0.value}
-                    ForEach(keys.indices) { index in
-                        BarChartView(data: ChartData(values: [
-                            ("\(keys[index])",values[index]),
-                        ]), title: "Yards Per Game",legend: "Vs. Conference Opponents", form: ChartForm.medium,valueSpecifier: "%.0f Yards")
+                List {
+                    Section(header: Text("Team Stats")) {
+                        ForEach(model.teamDataList) { item in
+                            Text("Record: \(item.Record)")
+                            Text("Total Yards: \(item.totYards)")
+                                .navigationTitle(item.Team)
+                        }
                     }
-                        /*BarChartView(data: ChartData(values: [
-                            ("\()",item.gOnetot.values.first!),
-                            ("\(item.gOnetot.keys.first!)", item.gOnetot.values.first!),
-                            ("Vs. Presbyterian", item.gThreetot),
-                            ("Vs. Butler", item.gFourtot),
-                            ("Vs. Morehead State", item.gFivetot),
-                            ("Vs. St. Thomas", item.gSixtot),
-                            ("Vs. Dayton", item.gSevtot),
-                            ("Vs. Drake", item.gEighttot),
-                            
-                        ]), title: "Yards Per Game",legend: "Vs. Conference Opponents", form: ChartForm.medium,valueSpecifier: "%.0f Yards")*/
+                    Section(header: Text("Per Game Graphs")) {
+                        ForEach (model.teamDataList) { items in
+                            let keys = items.totYardsConf.map{$0.key}
+                            let values = items.totYardsConf.map{$0.value}
+                            BarChartView(data: ChartData(values: keys.indices.map { index in
+                                ("\(keys[index])",
+                                 values[index])}),
+                            title: "Yards Per Game",
+                            legend: "Vs. Conference Opponents",
+                            valueSpecifier: "%.0f Tot Off Yards")
+                        }
+                    }
                 }
+                .listStyle(.grouped)
             }
         }
     }
-    
     init(){
         model.getData()
     }
@@ -52,6 +47,5 @@ struct DavidsonView: View {
 struct DavidsonView_Previews: PreviewProvider {
     static var previews: some View {
         DavidsonView()
-            .environmentObject(ViewModel(collection: "DavidsonData"))
     }
 }

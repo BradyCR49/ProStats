@@ -20,7 +20,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            LazyVGrid(columns: columns, alignment: .leading,spacing: 25){
+            LazyVGrid(columns: columns, alignment: .leading, spacing: 25){
                     ForEach(Array(zip(pflTeams, teamViews)), id: \.0) { team in
                         NavigationLink(destination: AnyView(team.1), label: {Text("\(team.0)")
                                 .bold()

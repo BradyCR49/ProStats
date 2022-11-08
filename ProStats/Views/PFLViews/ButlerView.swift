@@ -22,7 +22,7 @@ struct ButlerView: View {
                 }
                 List(model.teamDataList) { item in
                     BarChartView(data: ChartData(values: [
-                        ("Vs. St Thomas",item.gOnetot),
+                        //("Vs. St Thomas",item.gOnetot),
                         ("Vs. Drake", item.gTwotot),
                         ("Vs. San Diego", item.gThreetot),
                         ("Vs. Morehead", item.gFourtot),

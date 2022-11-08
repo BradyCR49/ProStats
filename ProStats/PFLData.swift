@@ -12,17 +12,10 @@ struct TeamData: Hashable, Codable, Identifiable {
     var id: String
     var Team: String
     var Record: String
-    var TotYards: Int
+    var totYards: Int
     var pYards: Int
     var rYards: Int
-    var gOnetot: [String:Int]
-    var gTwotot: Int
-    var gThreetot: Int
-    var gFourtot: Int
-    var gFivetot: Int
-    var gSixtot: Int
-    var gSevtot: Int
-    var gEighttot: Int
+    var totYardsConf: [String:Int]
     
     
 }

@@ -35,17 +35,10 @@ class ViewModel: ObservableObject {
                             return TeamData(id: d.documentID,
                                             Team: d["Team"] as? String ?? "",
                                             Record: d["Record"] as? String ?? "",
-                                            TotYards: d["Total Yards"]  as? Int ?? 0,
+                                            totYards: d["Total Yards"]  as? Int ?? 0,
                                             pYards: d["Pass Yards"] as? Int ?? 0,
                                             rYards: d["Rush Yards"] as? Int ?? 0,
-                                            gOnetot: d["Game 1"] as? [String:Int] ?? [:],
-                                            gTwotot: d["Game 2"] as? Int ?? 0,
-                                            gThreetot: d["Game 3"] as? Int ?? 0,
-                                            gFourtot: d["Game 4"] as? Int ?? 0,
-                                            gFivetot: d["Game 5"] as? Int ?? 0,
-                                            gSixtot: d["Game 6"] as? Int ?? 0,
-                                            gSevtot: d["Game 7"] as? Int ?? 0,
-                                            gEighttot: d["Game 8"] as? Int ?? 0
+                                            totYardsConf: d["Total Yards Conf"] as? [String:Int] ?? [:]
                             )
                         }
                     }
