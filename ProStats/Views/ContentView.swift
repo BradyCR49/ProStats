@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Firebase
+import SwiftUICharts
 
 struct ContentView: View {
     var pflTeams = ["Butler","Davidson","Dayton","Drake","Marist","Morehead State","Presbyterian","San Diego","St Thomas","Stetson","Valparaiso"]
@@ -38,6 +39,7 @@ struct ContentView: View {
             .accentColor(Color(.label))
         }
     }
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
