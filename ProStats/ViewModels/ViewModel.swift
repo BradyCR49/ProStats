@@ -7,7 +7,6 @@
 
 import SwiftUI
 import Firebase
-import Foundation
 class ViewModel: ObservableObject {
     @Published var teamDataList = [TeamData]()
     
@@ -38,7 +37,9 @@ class ViewModel: ObservableObject {
                                             totYards: d["Total Yards"]  as? Int ?? 0,
                                             pYards: d["Pass Yards"] as? Int ?? 0,
                                             rYards: d["Rush Yards"] as? Int ?? 0,
-                                            totYardsConf: d["Total Yards Conf"] as? [String:Int] ?? [:]
+                                            totYardsConf: d["Total Yards Conf"] as? [String:Int] ?? [:],
+                                            offEffRating: d["offEffRating"] as? [String:Double] ?? [:],
+                                            defEffRating: d["defEffRating"] as? [String:Double] ?? [:]
                             )
                         }
                     }

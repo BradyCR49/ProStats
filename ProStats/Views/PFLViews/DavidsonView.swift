@@ -19,13 +19,16 @@ struct DavidsonView: View {
                         ForEach(model.teamDataList) { item in
                             Text("Record: \(item.Record)")
                             Text("Total Yards: \(item.totYards)")
+                            Text("Passing Yards: \(item.pYards)")
+                            Text("Rushing Yards: \(item.rYards)")
+                            
                                 .navigationTitle(item.Team)
                         }
                     }
                     Section(header: Text("Per Game Graphs")) {
                         ForEach (model.teamDataList) { items in
                             let keys = items.totYardsConf.map{$0.key}
-                            let values = items.totYardsConf.map{$0.value}
+                            let values = items.totYardsConf.map{$0.value}.sorted()
                             BarChartView(data: ChartData(values: keys.indices.map { index in
                                 ("\(keys[index])",
                                  values[index])}),

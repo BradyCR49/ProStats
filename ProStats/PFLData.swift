@@ -16,6 +16,8 @@ struct TeamData: Hashable, Codable, Identifiable {
     var pYards: Int
     var rYards: Int
     var totYardsConf: [String:Int]
+    var offEffRating: [String:Double]
+    var defEffRating: [String:Double]
     
     
 }

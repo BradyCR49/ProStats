@@ -8,7 +8,6 @@
 import SwiftUI
 import Firebase
 import SwiftUICharts
-import Charts
 
 struct ButlerView: View {
     @ObservedObject var model = ViewModel(collection: "ButlerData")
@@ -20,6 +19,8 @@ struct ButlerView: View {
                         ForEach(model.teamDataList) { item in
                             Text("Record: \(item.Record)")
                             Text("Total Yards: \(item.totYards)")
+                            Text("Passing Yards: \(item.pYards)")
+                            Text("Rushing Yards: \(item.rYards)")
                                 .navigationTitle(item.Team)
                         }
                     }
@@ -36,13 +37,11 @@ struct ButlerView: View {
                                                  title: "Yards Per Game",
                                                  legend: "Vs. Conference Opponents",
                                                  valueSpecifier: "%.0f Tot Off Yards")
-                                    List{
+                                    VStack{
                                         Text("Butler had the most yards per game Vs. Dayton")
-                                            .font(.caption)
-                                        Text("They had the least amount of yards Vs. San Diego")
-                                            .font(.caption)
+                                            .padding(.bottom)
+                                        Text("They had the least amount of yards Vs. Morehead St.")
                                     }
-                                    .cornerRadius(15)
                                 }
                                 BarChartView(data: ChartData(values: keysPassY.indices.map { index in
                                     ("\(keysPassY[index])",
@@ -52,11 +51,10 @@ struct ButlerView: View {
                                              valueSpecifier: "%.0f Pass Yards")
                                 
                         }
-                            .frame(maxWidth: .infinity, alignment: .leading)
                     }
                 }
-                .listStyle(.insetGrouped)
-                .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                .listStyle(.grouped)
+
             }
         }
     }
