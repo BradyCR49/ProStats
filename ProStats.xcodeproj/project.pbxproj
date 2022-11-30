@@ -68,6 +68,8 @@
 		23B1464728E2196D00EC4274 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 23B1464628E2196D00EC4274 /* FirebaseRemoteConfigSwift */; };
 		23B1464928E2196D00EC4274 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 23B1464828E2196D00EC4274 /* FirebaseStorage */; };
 		23B1464B28E2196D00EC4274 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 23B1464A28E2196D00EC4274 /* FirebaseStorageCombine-Community */; };
+		23B79CD82937CCE300AF1787 /* FCSConferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B79CD72937CCE300AF1787 /* FCSConferenceView.swift */; };
+		23C1FE4B29357AED0003B10F /* PFLConferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C1FE4A29357AED0003B10F /* PFLConferenceView.swift */; };
 		23EA20D228BC445200CD7D6C /* ProStatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA20D128BC445200CD7D6C /* ProStatsApp.swift */; };
 		23EA20D428BC445200CD7D6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA20D328BC445200CD7D6C /* ContentView.swift */; };
 		23EA20D628BC445400CD7D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23EA20D528BC445400CD7D6C /* Assets.xcassets */; };
@@ -116,6 +118,8 @@
 		23B1460F28E1356800EC4274 /* StetsonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StetsonView.swift; sourceTree = "<group>"; };
 		23B1461128E1359D00EC4274 /* ValparaisoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValparaisoView.swift; sourceTree = "<group>"; };
 		23B1461328E1361A00EC4274 /* MaristView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaristView.swift; sourceTree = "<group>"; };
+		23B79CD72937CCE300AF1787 /* FCSConferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCSConferenceView.swift; sourceTree = "<group>"; };
+		23C1FE4A29357AED0003B10F /* PFLConferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFLConferenceView.swift; sourceTree = "<group>"; };
 		23EA20CE28BC445200CD7D6C /* ProStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23EA20D128BC445200CD7D6C /* ProStatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProStatsApp.swift; sourceTree = "<group>"; };
 		23EA20D328BC445200CD7D6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -275,7 +279,9 @@
 		23F5BEBE28DC0E7700D9624E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				23B79CD72937CCE300AF1787 /* FCSConferenceView.swift */,
 				23EA20D328BC445200CD7D6C /* ContentView.swift */,
+				23C1FE4A29357AED0003B10F /* PFLConferenceView.swift */,
 				23B1464C28E21E8100EC4274 /* PFLViews */,
 			);
 			path = Views;
@@ -441,11 +447,13 @@
 				23EA20D428BC445200CD7D6C /* ContentView.swift in Sources */,
 				23B1460428E1322E00EC4274 /* DrakeView.swift in Sources */,
 				23B1461228E1359D00EC4274 /* ValparaisoView.swift in Sources */,
+				23C1FE4B29357AED0003B10F /* PFLConferenceView.swift in Sources */,
 				236F108F28DC1117002EA8F4 /* ViewModel.swift in Sources */,
 				23EA20D228BC445200CD7D6C /* ProStatsApp.swift in Sources */,
 				23B1461028E1356800EC4274 /* StetsonView.swift in Sources */,
 				23B1460A28E133DE00EC4274 /* PresbyterianView.swift in Sources */,
 				23B1460828E1333600EC4274 /* MoreheadStateView.swift in Sources */,
+				23B79CD82937CCE300AF1787 /* FCSConferenceView.swift in Sources */,
 				23B1460E28E1353200EC4274 /* StThomasView.swift in Sources */,
 				23B1460028E1309200EC4274 /* DavidsonView.swift in Sources */,
 				236F108B28DC10C8002EA8F4 /* PFLData.swift in Sources */,

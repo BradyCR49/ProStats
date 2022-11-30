@@ -12,16 +12,17 @@ import SwiftUICharts
 struct ButlerView: View {
     @ObservedObject var model = ViewModel(collection: "ButlerData")
     var body: some View {
-        NavigationView {
             VStack {
                 List {
                     Section(header: Text("Team Stats")) {
                         ForEach(model.teamDataList) { item in
+                            Text("\(item.Team)")
+                                .bold()
+                                .font(.title)
                             Text("Record: \(item.Record)")
                             Text("Total Yards: \(item.totYards)")
                             Text("Passing Yards: \(item.pYards)")
                             Text("Rushing Yards: \(item.rYards)")
-                                .navigationTitle(item.Team)
                         }
                     }
                     Section(header: Text("Per Game Graphs")) {
@@ -57,7 +58,6 @@ struct ButlerView: View {
 
             }
         }
-    }
     
     init(){
         model.getData()
