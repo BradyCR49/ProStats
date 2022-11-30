@@ -13,18 +13,16 @@ struct ContentView: View {
     
     var body: some View {
             TabView{
-                FCSConferenceView()
+                DivisionView()
                     .tabItem {
-                        Label("Conferences", systemImage: "house")
+                        Label("Conferences", systemImage: "football")
                     }
                 Text(" ")
                     .tabItem {
-                        Label("Players", systemImage: "book")
+                        Label("Players", systemImage: "figure.american.football")
                     }
-                Text(" ")
-                    .tabItem {
-                        Label("", systemImage: "plus.circle")
             }
+            .accentColor(.black)
         }
     }
     
@@ -33,5 +31,3 @@ struct ContentView: View {
             ContentView()
         }
     }
-    
-}

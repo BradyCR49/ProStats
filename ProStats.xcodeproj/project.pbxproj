@@ -69,6 +69,7 @@
 		23B1464928E2196D00EC4274 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 23B1464828E2196D00EC4274 /* FirebaseStorage */; };
 		23B1464B28E2196D00EC4274 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 23B1464A28E2196D00EC4274 /* FirebaseStorageCombine-Community */; };
 		23B79CD82937CCE300AF1787 /* FCSConferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B79CD72937CCE300AF1787 /* FCSConferenceView.swift */; };
+		23B79CDA2938049500AF1787 /* DivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B79CD92938049500AF1787 /* DivisionView.swift */; };
 		23C1FE4B29357AED0003B10F /* PFLConferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C1FE4A29357AED0003B10F /* PFLConferenceView.swift */; };
 		23EA20D228BC445200CD7D6C /* ProStatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA20D128BC445200CD7D6C /* ProStatsApp.swift */; };
 		23EA20D428BC445200CD7D6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA20D328BC445200CD7D6C /* ContentView.swift */; };
@@ -119,6 +120,7 @@
 		23B1461128E1359D00EC4274 /* ValparaisoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValparaisoView.swift; sourceTree = "<group>"; };
 		23B1461328E1361A00EC4274 /* MaristView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaristView.swift; sourceTree = "<group>"; };
 		23B79CD72937CCE300AF1787 /* FCSConferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCSConferenceView.swift; sourceTree = "<group>"; };
+		23B79CD92938049500AF1787 /* DivisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionView.swift; sourceTree = "<group>"; };
 		23C1FE4A29357AED0003B10F /* PFLConferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFLConferenceView.swift; sourceTree = "<group>"; };
 		23EA20CE28BC445200CD7D6C /* ProStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23EA20D128BC445200CD7D6C /* ProStatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProStatsApp.swift; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 		23F5BEBE28DC0E7700D9624E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				23B79CD92938049500AF1787 /* DivisionView.swift */,
 				23B79CD72937CCE300AF1787 /* FCSConferenceView.swift */,
 				23EA20D328BC445200CD7D6C /* ContentView.swift */,
 				23C1FE4A29357AED0003B10F /* PFLConferenceView.swift */,
@@ -441,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				236F109128DC113D002EA8F4 /* ButlerView.swift in Sources */,
+				23B79CDA2938049500AF1787 /* DivisionView.swift in Sources */,
 				23B1460228E1315900EC4274 /* DaytonView.swift in Sources */,
 				23B1460C28E1348300EC4274 /* SanDiegoView.swift in Sources */,
 				23B1461428E1361A00EC4274 /* MaristView.swift in Sources */,
